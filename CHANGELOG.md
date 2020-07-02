@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `DataWrapper` class to facilitate data manipulation.
 - `Proxy` class to represent proxies.
 - `FileManager` class to facilitate file saving.
+- Scraping logic.
