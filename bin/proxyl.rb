@@ -2,6 +2,7 @@
 
 require 'tty-spinner'
 require 'colorize'
+require 'http'
 require_relative '../lib/scrapper'
 require_relative '../lib/file_manager'
 
@@ -12,8 +13,8 @@ file = nil
 
 spinner.update(title: 'Downloading data...')
 spinner.run('Done!') do |s|
-  document = nil
-  sleep(1)
+  response = HTTP.get('https://free-proxy-list.net')
+  document = response.body.to_s
   s.reset
 end
 
