@@ -2,7 +2,9 @@ require 'json'
 
 # Data wrapper.
 class DataWrapper
-  def initialize(data = {})
+  attr_reader :data
+
+  def initialize(data = [])
     @data = data
   end
 
@@ -10,7 +12,11 @@ class DataWrapper
     data.empty?
   end
 
-  def to_json(*_args)
-    @data.to_json
+  def add(object)
+    @data << object
+  end
+
+  def to_json(*args)
+    @data.to_json(*args)
   end
 end

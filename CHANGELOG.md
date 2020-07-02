@@ -9,3 +9,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Retrieve the raw html page contining the list of proxies.
+- `DataWrapper` class to facilitate data manipulation.
