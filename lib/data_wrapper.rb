@@ -8,10 +8,6 @@ class DataWrapper
     @data = data
   end
 
-  def empty?
-    data.empty?
-  end
-
   def add(object)
     @data << object
   end

@@ -16,16 +16,6 @@ describe DataWrapper do
     end
   end
 
-  describe '#empty' do
-    it 'returns true when there is no data' do
-      expect(empty_wrapper).to be_empty
-    end
-
-    it 'returns false when there is data' do
-      expect(wrapper).to_not be_empty
-    end
-  end
-
   describe '#add' do
     it 'appends an object to the data array' do
       temp_wrapper = DataWrapper.new

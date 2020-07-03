@@ -1,6 +1,7 @@
 # Proxyl 🌐
 
-Proxyl is a scraper that scrapes proxy server information and saves it in `json` format
+Proxyl is a scraper that scrapes free proxy server information from [Free Proxy List](https://free-proxy-list.net) and saves it in `json` format.
+Proxyl is built using [http](https://rubygems.org/gems/http) and [Nokogiri](https://rubygems.org/gems/nokogiri).
 
 * [Usage](#usage)
 * [Testing](#testing)
@@ -15,6 +16,8 @@ cd proxyl
 bundle install
 bin/proxyl.rb
 ```
+
+![screenshot](screenshot.png)
 
 The scraper should start scraping and in few seconds you should have your json file location printed on your screen.
 The json follows the following format:
@@ -41,6 +44,15 @@ The scraper is fully tested with [RSpec](https://rspec.info/), to run the tests:
 ```bash
 rspec .
 ```
+
+---
+
+## Contributers
+
+👤 **Osama Aldemeery**
+
+- Github: [@aldemeery](https://github.com/aldemeery)
+- Linkedin: [osamaaldemeery](https://linkedin.com/in/osamaaldemeery)
 
 ---
 
