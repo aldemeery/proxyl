@@ -1,7 +1,9 @@
-# frozen_string_literal: true
+source 'https://rubygems.org'
 
-source "https://rubygems.org"
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
-# gem "rails"
+gem 'colorize', '~> 0.8.1'
+gem 'http', '~> 4.4', '>= 4.4.1'
+gem 'json', '~> 2.3', '>= 2.3.1'
+gem 'nokogiri', '~> 1.10', '>= 1.10.9'
+gem 'tty-spinner', '~> 0.9.3'
